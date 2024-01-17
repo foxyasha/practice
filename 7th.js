@@ -1,6 +1,6 @@
 let month = Math.floor(Math.random() * 12) + 1
 let year = 2024
-const season = () =>{
+const season = (month) =>{
     if(month == 12 || month < 3){
         return 'Зима'
     }
@@ -12,7 +12,7 @@ const season = () =>{
     }
     else return 'Осень'
 }
-const leapYear = () =>{
+const leapYear = (year) =>{
     if (year % 4 === 0){
         return 'Високосный год'
     }
